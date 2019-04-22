@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+
+#----------------------------------mysql----------------------
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.92.165.230/super_money?characterEncoding=utf8&useSSL=false
+    username: root
+    password: 7uji9olp_
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 1 from dual
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+
+
+
+
+

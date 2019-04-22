@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sk.drools.dao.RulePropertyInfoMapper">
+
+    <resultMap id="baseMap" type="com.sk.drools.entity.RulePropertyInfo">
+        <id property="rulePropertyId" column="RULE_PROPERTY_ID"></id>
+        <result property="rulePropertyIdentify" column="RULE_PROPERTY_IDENTIFY"></result>
+        <result property="rulePropertyName" column="RULE_PROPERTY_NAME"></result>
+        <result property="rulePropertyDesc" column="RULE_PROPERTY_DESC"></result>
+        <result property="defaultValue" column="DEFAULT_VALUE"></result>
+        <result property="isEffect" column="IS_EFFECT"></result>
+        <result property="remark" column="REMARK"></result>
+    </resultMap>
+
+    <select id="getRulePropertyInfo" resultType="java.lang.Integer">
+        SELECT count(*) FROM  rule_property_info
+    </select>
+
+</mapper>
